@@ -42,11 +42,11 @@
 
         base {
             bindings = <
-&kp ESC            &kp N1  &kp N2  &kp N3            &kp N4        &kp N5          &kp N6      &kp N7     &kp N8  &kp N9   &kp N0     &to 1
-&kp TAB            &kp Y   &kp P   &kp O             &kp U         &kp J           &kp C       &kp K      &kp L   &kp D    &kp W      &kp FSLH
-&kp APOS           &kp I   &kp N   &kp E             &kp A         &kp MINUS       &kp H       &kp M      &kp T   &kp S    &kp R      &kp SEMI
-&mt LEFT_GUI CAPS  &kp Q   &kp Z   &kp COMMA         &kp DOT       &kp G           &kp B       &lt 3 F    &kp X   &lt 4 V  &mkp LCLK  &mkp RCLK
-                                   &kp LEFT_CONTROL  &kp SPACE     &mo 1           &kp DELETE  &kp SPACE
+&kp ESC            &kp N1  &kp N2  &kp N3            &kp N4        &kp N5          &kp N6      &kp N7           &kp N8  &kp N9   &kp N0     &to 1
+&kp TAB            &kp Y   &kp P   &kp O             &kp U         &kp J           &kp C       &kp K            &kp L   &kp D    &kp W      &kp FSLH
+&kp APOS           &kp I   &kp N   &kp E             &kp A         &kp MINUS       &kp H       &kp M            &kp T   &kp S    &kp R      &kp SEMI
+&mt LEFT_GUI CAPS  &kp Q   &kp Z   &kp COMMA         &kp DOT       &kp G           &kp B       &lt 3 F          &kp X   &lt 4 V  &mkp LCLK  &mkp RCLK
+                                   &kp LEFT_CONTROL  &kp SPACE     &mo 1           &kp DELETE  &lt 2 BACKSPACE
                                                      &kp LEFT_WIN  &kp LEFT_ALT    &kp ENTER
             >;
         };
@@ -64,12 +64,12 @@
 
         numbers {
             bindings = <
-&trans  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans      &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans        &trans        &trans        &trans          &trans      &trans  &trans  &trans  &trans  &trans
-&trans  &bt BT_CLR_ALL  &trans        &trans        &trans        &trans          &trans      &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans        &bt BT_CLR    &trans        &trans          &bt BT_NXT  &trans  &trans  &trans  &trans  &trans
-                                      &trans        &trans        &trans          &trans      &trans
-                                                    &trans        &trans          &trans
+&trans  &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3     &bt BT_SEL 4    &trans      &trans  &trans  &trans  &trans   &trans
+&trans  &trans          &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &trans          &trans      &kp N7  &kp N8  &kp N9  &trans   &trans
+&trans  &bt BT_CLR_ALL  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans          &trans      &kp N4  &kp N5  &kp N6  &kp N0   &trans
+&trans  &trans          &trans          &bt BT_CLR      &trans           &trans          &bt BT_NXT  &kp N1  &kp N2  &kp N3  &kp DOT  &trans
+                                        &trans          &trans           &trans          &trans      &trans
+                                                        &trans           &trans          &trans
             >;
         };
 
